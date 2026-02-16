@@ -39,7 +39,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 'Home',#for adding Home app write by Tuhin
-'Cars'#for adding Cars app write by Tuhin
+'Cars',#for adding Cars app write by Tuhin
+'ContactUs',#for adding ContactUs app write by Tuhin
+'AboutUs'#for adding AboutUs app write by Tuhin
 
 ]
 
@@ -137,3 +139,12 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')#for media files link img. write by 
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+
+CSRF_TRUSTED_ORIGINS = [
+    'https://e91e6665-e0ee-4c96-b5e6-815af7f20998-00-c8obrymvg78.pike.replit.dev',
+]
+
+ALLOWED_HOSTS = ['*'] # Or paste the specific .replit.dev domain here
+

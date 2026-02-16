@@ -1,3 +1,4 @@
+'''
 from django.db import models
 
 class Car(models.Model):
@@ -10,3 +11,5 @@ class Car(models.Model):
 
     def __str__(self):
         return str(self.name)
+
+'''

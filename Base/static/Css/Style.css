@@ -116,10 +116,42 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
+}}
+.car-item { 
+    background: #222;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    
 }
-.car-item { background: #222; padding: 15px; border-radius: 8px; text-align: center; }
-.car-item img { width: 100%; border-radius: 5px; }
-.car-item h3 { margin: 15px 0 5px; }
+.car-item img { width: 100%; border-radius: 5px; 
+              }
+
+.car-item h3 { 
+    margin: 15px 0 5px;
+}
+
+#Top_Speed {
+    color: #ff4d29;
+    font-size: 1rem;
+    margin: 15px 0 5px;
+    font-weight: bold;
+    display: flex;
+    justify-content: flex-end ;
+
+
+#price {
+  font-family: 'Arial', sans-serif; /* Or the same font as your titles */
+  color: #00ff00;                  /* Off-white for better readability */
+  font-size: 1.2rem;               /* Makes it slightly larger */
+  font-weight: bold;               /* Gives it more presence */
+  margin-top: 5px;                 /* Adjust spacing from the title */
+  letter-spacing: 1px;             /* Professional look */
+}
+
+    
+    
+}
 
 /*---------Cars End--------*/
 

@@ -22,5 +22,11 @@ from django.conf.urls.static import static #for adding img  write by Tuhin
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('Home.urls')),
+    path('', include('Cars.urls')),
+    path('', include('ContactUs.urls')),
+    path('', include('AboutUs.urls')),
+    
+    
 ]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 #also for adding img  write by Tuhin
+urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
