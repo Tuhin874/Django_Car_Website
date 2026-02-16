@@ -1,0 +1,35 @@
+{% extends "Layout/Layout.html" %}
+
+
+{% block title %}
+<h3 class="tital">AutoDrive | Cars</h3>
+{% endblock title %}
+
+
+{% block content1 %}
+
+<section id="cars" class="section-padding">
+    <h2 class="section-title">Our Collection</h2>
+    <div class="car-grid">
+        {% for Car in Cars%}             <div class="car-item">
+              <img src="{{Car.image.url}}" alt="Car.model">
+              <h3>{{Car.make}}</h3>
+              <p>{{Car.price}}</p>
+           </div>
+        {%endfor%}
+    </div>
+</section>
+
+{%endblock content1%}
+
+
+
+{% block content2 %}
+
+
+{%endblock content2%}
+
+
+
+
+

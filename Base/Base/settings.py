@@ -38,7 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-'Home',#for adding app write by Tuhin
+'Home',#for adding Home app write by Tuhin
+'Cars'#for adding Cars app write by Tuhin
 
 ]
 
