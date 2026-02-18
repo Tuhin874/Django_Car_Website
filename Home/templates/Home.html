@@ -1,0 +1,28 @@
+{% extends "Layout/Layout.html" %}
+
+
+{% block title %}
+<h3 class="tital">AutoDrive | Home</h3>
+{% endblock title %}
+
+
+
+{% block content1 %}
+
+<section class="home">
+  <div class="home-content">
+    <h2>Welcome to AutoDrive</h2>
+    <p>Discover the best cars for your needs.</p>
+    <button onclick="location.href='{% url 'ExploreCars'%}'">Explore Cars</button>
+  </div>
+</section>
+
+{%endblock content1%}
+
+
+
+{% block content2 %}
+
+
+
+{%endblock content2%}
