@@ -1,4 +1,6 @@
 {% extends "Layout/Layout.html" %}
+{% load static %}
+
 
 
 {% block title %}
@@ -12,10 +14,10 @@
 <section id="about" class="about-container">
     <div class="about-text">
         <h2>About AutoDrive</h2>
-        <p>We provide the highest quality luxury vehicles with a focus on performance and reliability.</p>
+        <p>At AutoDrive, we believe a vehicle is more than a mode of transport—it’s a statement of intent. Since [Year], we have curated an elite collection of the world’s most refined automobiles, ensuring that every curve, engine note, and stitch meets the exacting standards of the modern driver.</p>
     </div>
     <div class="about-image">
-        <img src="showroom.jpg" alt="Showroom">
+        <img src="{% static 'Img/9732.jpg' %}" alt="Showroom">
     </div>
 </section>
 

@@ -1,3 +1,4 @@
+
 {% extends "Layout/Layout.html" %}
 
 
@@ -36,12 +37,12 @@
     {% for CarC in All_Cars %}
     <div class="car-card">
         <div class="card-image">
-            <img src="{{ CarC.image.url }}" alt="{{ CarC.model }}">
+            <img src="{{ CarC.image.url}}" alt="{{ CarC.model }}">
         </div>
 
         <div class="card-content">
             <span class="badge">{{ CarC.category }}</span>
-            <h3 class="car-title">{{ CarC.make }} {{ CarC.model }}</h3>
+            <h3 class="car-title">{{ CarC.model_name }}</h3>
             <p class="price">${{ CarC.price }}</p>
             <a href="{% url 'Car_Detail_View' CarC.id %}" class="btn">View Details</a>
         </div>
